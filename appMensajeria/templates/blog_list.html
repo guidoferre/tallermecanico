@@ -1,0 +1,31 @@
+{% extends 'padre.html' %}
+{% load static %}
+
+
+{% block bloqueQueCambia %}
+
+<div class="cont-tittle">
+    <div class="tittle-subtittle">
+      <br>
+        <h1 class='tittle'>Comentarios</h1>
+        <h4> Dejanos tu comentario contando tu experiencia con <b>Mecanica CODER'S</b></h4>
+
+        <br>
+        {% for post in posts  %}
+        <ul>
+            <a class='mi-post' href="{% url 'appMensajeria:detail'  post.id %}">{{post.titulo}} - {{post.nombre}} - {{post.fecha}}</a>
+            <a class='btn btn-primary' href="{% url 'appMensajeria:delete'  post.id %}">Eliminar</a>
+            <br>
+        </ul>
+        {% endfor %}
+        <br>
+
+        <a class='btn btn-primary' href=" {% url 'appMensajeria:create' %}">Contanos tu experiencia</a>
+    </div>
+    <br>
+  
+  </div>
+
+
+
+{% endblock bloqueQueCambia  %}

@@ -1,0 +1,133 @@
+:root {
+    --color1 : rgb(33, 37, 41);
+}
+
+.contenedor {
+  /* margin-top: 15px; */
+  background-color: var(--color1);
+}
+
+.lista_reparaciones {
+    margin-top: -25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    justify-items: center;
+    margin-bottom: 30px;
+    background-color: #ddd;
+  }
+  
+  
+.form-edit {
+    border: none;
+    padding: 25px 40px;
+    border-radius: 25px;
+    background-color: #ddd ;
+    color: black;
+    width: 600px;
+    height: 380px;
+    box-shadow: var(--color1);
+  }
+  
+
+.tittle-subtittle {
+    margin: 0 20px 20px 20px;
+    width: 100%;
+    color: white;
+  }
+
+.cont-tittle{
+    background-color: var(--color1);
+}
+
+.card {
+  color: white;
+    box-shadow: 5px 0px 15px 0px var(--color1);
+    background-color: var(--color1);
+
+}
+
+
+.mi-navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.mi-navbarbrand {
+  color: white;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.00rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.btn-primario{
+  background-color: white;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 15px;
+}
+
+.supratext {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: auto;
+}
+
+.tittle {
+  color: #ffc720;
+}
+
+.mi-link {
+  color: #ffc720;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.mi-link:hover {
+  color: #d5bc1a;
+}
+
+.btn-edit {
+  padding: 10px;
+  color: #000;
+  background-color: #f3d408;
+  transition: 0.3s ease;
+  margin-left: 10px;
+}
+.btn-edit:hover {
+  background-color: #d5bc1a;
+}
+
+.next {
+  background-color: #ffc720;
+  padding: 10px;
+  border: 2px black solid;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.previous {
+  background-color: #ffc720;
+  padding: 10px;
+  border: 2px black solid;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.pagination {
+  margin-left: 30px;
+}
+
+.mi-post {
+  color: white;
+  font-size: 18px;
+  transition: 0.3s ease;
+}

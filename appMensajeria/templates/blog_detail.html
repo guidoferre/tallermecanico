@@ -1,0 +1,29 @@
+{% extends 'padre2.html' %}
+{% load static %}
+
+
+{% block bloqueQueCambia %}
+<div class="cont-tittle">
+    <div class="tittle-subtittle">
+      <br>
+        
+        <h3 class='tittle'>Consulta de {{post.nombre}} .</h3>
+        <small> {{post.email}} - {{post.fecha}} </small>
+        <hr>
+        <h5>{{post.titulo}}</h5>
+        {{post.contenido  | safe }}
+        <br>
+        <br>
+    <a class='mi-link' href="{% url 'appMensajeria:blog' %}">Volver</a> 
+
+    </div>
+    <br>
+      
+
+</div>
+
+
+{% endblock bloqueQueCambia  %}
+
+
+

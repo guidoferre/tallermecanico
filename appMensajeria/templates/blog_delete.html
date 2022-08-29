@@ -1,0 +1,21 @@
+{% extends 'padre2.html' %}
+{% load static %}
+
+
+{% block bloqueQueCambia %}
+<div class="cont-tittle">
+    <div class="tittle-subtittle">
+    <br>
+    <h1>Estas seguro de eliminar esta consulta?</h1>
+    <form method='POST'>
+        {% csrf_token %} 
+        
+        {{form}}
+        <button type='submit' class='btn btn-primary'>Eliminar</button>
+        </form>
+    </div>
+    <br>
+      
+</div>
+
+{% endblock bloqueQueCambia  %}

@@ -1,0 +1,29 @@
+{% extends 'padre.html' %}
+
+
+{% block bloqueQueCambia %}
+
+<div class="cont-tittle">
+  <div class="tittle-subtittle">
+     <br>
+     <br>
+      <h1 class='tittle'>Bienvenidos a la seccion de busqueda de clientes</h1>
+      <br>
+      <form action="{% url 'Buscar' %}" method="GET">
+        {% csrf_token %}
+
+        <h4>Cliente: <input type="text"  name= "nombre" placeholder='Nombre del cliente' style='font-size:20px'></h4>
+        <br>
+        <input class='btn btn-primary' type="submit" value="Buscar">
+
+      </form>
+
+      <br>
+      <a href="{% url 'lista' %}" class='mi-link'>Volver</a>
+      <br>
+      <br>
+    </div>
+  </div>    
+    
+{% endblock bloqueQueCambia  %}
+    
