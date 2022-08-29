@@ -1,0 +1,26 @@
+{% extends 'padre.html' %}
+
+
+{% block bloqueQueCambia %}
+
+<div class="cont-tittle">
+  <div class="tittle-subtittle">
+    <br>
+    <br>
+    <h1 class='tittle'>Carga tu Avatar !</h1>
+    <br>
+    <form enctype="multipart/form-data" method="POST">
+        {% csrf_token %}
+
+        {{miFormulario.as_p}}
+        <input type="submit" value="Enviar" class='btn btn-primary'>
+
+    </form>
+    <br>
+    <a href="{% url 'EditarDatos' %}" class='mi-link'>Volver</a>
+    <br>
+    <br>
+  </div>
+</div>
+{% endblock bloqueQueCambia  %}
+    

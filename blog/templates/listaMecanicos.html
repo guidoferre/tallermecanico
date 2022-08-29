@@ -1,0 +1,37 @@
+{% extends 'padre.html' %}
+
+
+{% block bloqueQueCambia %}
+
+<div class="cont-tittle">
+    <div class="tittle-subtittle">
+      <br>
+      <br>
+        <h1 class="tittle">Mecanicos</h1>
+        <h3>Lista de mecanicos registrados.</h3>
+        <br>
+    
+    {% for mecanico in mecanicos %}
+        
+        <li> {{mecanico}} 
+            <a class='btn btn-primary' href="{% url 'deleteMecanico' mecanico.id %}"> Eliminar </a>
+            <a class='btn btn-secondary' href="{% url 'updateMecanico' mecanico.id %}"> Editar </a>
+            <br>
+            <br>
+        </li>
+        
+
+         
+
+    {% endfor %}
+      
+    
+    <a href="{% url 'MecanicoFormulario' %}" class='mi-link'>Volver</a>
+
+    </div>
+    <br>
+
+</div>
+
+{% endblock bloqueQueCambia  %}
+

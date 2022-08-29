@@ -1,0 +1,40 @@
+{% extends 'padre.html' %}
+
+
+{% block bloqueQueCambia %}
+<div class="cont-tittle">
+  <div class="tittle-subtittle">
+     <br>
+     <br>
+
+      <h1 class='tittle'>Listado de clientes.</h1>
+      <h3>Aqui encontraras un listado de todos tus clientes y sus vehiculos</h3>
+      <br>
+      <ul>
+
+            
+      {% for clientes in object_list  %}
+          <li>
+              <a class='mi-link' style='color:white' href="{% url 'clientesDetail' clientes.id %}">{{clientes}}</a> <a href="{% url 'EliminarCliente' clientes.id %}" class='btn btn-primary'>Eliminar</a>
+              <br>
+              <br>
+          </li>
+                 
+            
+        {% endfor %}
+            
+
+
+        </ul>
+
+      <a href="{% url 'lista' %}" class='mi-link'>Volver</a>
+</div>
+<br>
+
+</div>
+    
+{% endblock bloqueQueCambia  %}
+    
+
+
+

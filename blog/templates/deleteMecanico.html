@@ -1,0 +1,28 @@
+{% extends 'padre.html' %}
+
+
+{% block bloqueQueCambia %}
+<div class="cont-tittle">
+  <div class="tittle-subtittle">
+    <br>
+    <br>
+    <h1 class='tittle'>Eliminar</h1>
+
+  <form method="POST">
+    {% csrf_token %}
+
+   <p>Estas seguro que deseas eliminar este mecanico ?</p>
+    
+    <input type="submit" value="Confirmar" class='btn btn-primary'>
+    <br>
+    <br>
+   <a href="{% url 'listaMecanicos' %}" class='mi-link'>Volver</a>
+
+
+  </form>
+  <br>
+  <br> 
+</div>
+</div>
+    
+{% endblock bloqueQueCambia  %}

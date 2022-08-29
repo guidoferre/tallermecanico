@@ -1,0 +1,36 @@
+{% extends 'padre.html' %}
+
+
+{% block bloqueQueCambia %}
+
+<div class="cont-tittle">
+   <div class="tittle-subtittle">
+      <br>
+      <br>
+         <h1 class="tittle">Clientes </h1>
+         <h3>Gestiona los datos de tus clientes.</h3>
+         <ul>
+      <a class='mi-link' href="{% url 'clienteFormulario' %}">- Cargar cliente</a>
+      <br>
+      <a class='mi-link' href="{% url 'clientelist' %}">- Ver lista de clientes y sus vehiculos</a>
+      <br>
+      <a class='mi-link' href="{% url 'EditaEliminaCliente' %}">- Editar clientes</a>
+      <br>
+      <a class='mi-link' href="{% url 'BusquedaCliente' %}">- Buscar clientes</a>
+   </div>
+   <br>
+
+   
+</div>
+        
+
+
+</ul>
+
+
+    
+{% endblock bloqueQueCambia  %}
+    
+
+
+

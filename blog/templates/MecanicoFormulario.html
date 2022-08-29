@@ -1,0 +1,28 @@
+{% extends 'padre.html' %}
+
+
+{% block bloqueQueCambia %}
+
+<div class="cont-tittle">
+  <div class="tittle-subtittle">
+    <br>
+    <br>
+      <h1 class="tittle">Mecanicos</h1>
+      <h3>Ingresa los datos del mecanico.</h3>
+      <br>
+      <form action="{% url 'MecanicoFormulario' %}" method="POST">
+        {% csrf_token %}
+
+      {{miFormulario.as_p}}
+        <input type="submit" value="Enviar" class='btn btn-primary'>
+
+      </form>
+  <br>
+  <a class='mi-link' href="{% url 'listaMecanicos' %}">Ver listado de mecanicos.</a>
+  </div>
+  <br>
+  
+</div>
+  
+{% endblock bloqueQueCambia  %}
+    
